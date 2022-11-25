@@ -1,0 +1,4 @@
+repository "RecycleFirstPerson@storageapplet@cloud"
+  path "/"
+    br "/main"
+    co "/main"
