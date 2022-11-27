@@ -29,7 +29,7 @@ public class scorekeeper : MonoBehaviour
     public void inc(){
         scroe++;
         if(scroe == limit){
-            comp.colAll();
+            comp.finish_Game();
         }
         
         text.text = String.Format("{0}  /  {1}", scroe, limit);
