@@ -14,11 +14,11 @@ public class mmain : MonoBehaviour
     int currtraloi;
     public GameObject yaey;
     CanvasGroup n = new CanvasGroup();
-    public List<string> cHoi= new List<string> {"Chúng ta phải làm gì đối với chất thải rắn sinh hoạt có thể được tái chế?"};
-    public List<string> cauA = new List<string> {"Làm phân bón"};
-    public List<string> cauB = new List<string> {"Làm thức ăn chăn nuôi"};
-    public List<string> cauC = new List<string> {"Chuyển giao cho tổ chức, cá nhân tái sử dụng, tái chế"};
-    public List<int> cTL = new List<int> {2};
+    public List<string> cHoi= new List<string> {"Chúng ta phải làm gì đối với chất thải rắn sinh hoạt có thể được tái chế?","Biện pháp nào không giúp hạn chế ô nhiễm do chất thải rắn?","Chai nhựa thuộc loại rác gì?","Rác thải có thể được phân loại thành bao nhiêu loại chính?"};
+    public List<string> cauA = new List<string> {"Làm phân bón","Xây dựng các nhà máy, xí nghiệp xa khu dân cư","Có thể tái chế","7"};
+    public List<string> cauB = new List<string> {"Làm thức ăn chăn nuôi","Hạn chế sử dụng túi ni lông,đồ nhựa dùng 1 lần","Vô cơ","3"};
+    public List<string> cauC = new List<string> {"Chuyển giao cho tổ chức, cá nhân tái sử dụng, tái chế","Phân loại rác thải","Hữu cơ","4"};
+    public List<int> cTL = new List<int> {2,0,0,1};
     void Start(){
         
         n = GameObject.Find("Canvas").GetComponent<CanvasGroup>();
@@ -27,7 +27,7 @@ public class mmain : MonoBehaviour
         b3 = GameObject.Find("buttonC").transform.GetChild(0).GetComponent<Text>();
         t = GameObject.Find("quesT").GetComponent<Text>();
         confirm = GameObject.Find("confirm").GetComponent<Text>();
-        
+        yaey.SetActive(false);
         disp();
     }
     void disp(){
@@ -102,6 +102,10 @@ public class mmain : MonoBehaviour
     public void done(){
         if (cHoi.Count == 0){
             yaey.SetActive(true);
+            t.text = "";
+            b1.text = "";
+            b2.text = "";
+            b3.text = "";
             Invoke("sw",2.5f);
         } else {
             disp();

@@ -452,14 +452,29 @@ MonoBehaviour:
   cHoi:
   - "Ch\xFAng ta ph\u1EA3i l\xE0m g\xEC \u0111\u1ED1i v\u1EDBi ch\u1EA5t th\u1EA3i
     r\u1EAFn sinh ho\u1EA1t c\xF3 th\u1EC3 \u0111\u01B0\u1EE3c t\xE1i ch\u1EBF?"
+  - "Bi\u1EC7n ph\xE1p n\xE0o kh\xF4ng gi\xFAp h\u1EA1n ch\u1EBF \xF4 nhi\u1EC5m
+    do ch\u1EA5t th\u1EA3i r\u1EAFn?"
+  - "Chai nh\u1EF1a thu\u1ED9c lo\u1EA1i r\xE1c g\xEC?"
+  - "R\xE1c th\u1EA3i c\xF3 th\u1EC3 \u0111\u01B0\u1EE3c ph\xE2n lo\u1EA1i th\xE0nh
+    bao nhi\xEAu lo\u1EA1i ch\xEDnh?"
   cauA:
   - "L\xE0m ph\xE2n b\xF3n"
+  - "X\xE2y d\u1EF1ng c\xE1c nh\xE0 m\xE1y, x\xED nghi\u1EC7p xa khu d\xE2n c\u01B0"
+  - "C\xF3 th\u1EC3 t\xE1i ch\u1EBF"
+  - 7
   cauB:
   - "L\xE0m th\u1EE9c \u0103n ch\u0103n nu\xF4i"
+  - "H\u1EA1n ch\u1EBF s\u1EED d\u1EE5ng t\xFAi ni l\xF4ng,\u0111\u1ED3 nh\u1EF1a
+    d\xF9ng 1 l\u1EA7n"
+  - "V\xF4 c\u01A1"
+  - 3
   cauC:
   - "Chuy\u1EC3n giao cho t\u1ED5 ch\u1EE9c, c\xE1 nh\xE2n t\xE1i s\u1EED d\u1EE5ng,
     t\xE1i ch\u1EBF"
-  cTL: 02000000
+  - "Ph\xE2n lo\u1EA1i r\xE1c th\u1EA3i"
+  - "H\u1EEFu c\u01A1"
+  - 4
+  cTL: 02000000000000000000000001000000
 --- !u!4 &497715712
 Transform:
   m_ObjectHideFlags: 0
@@ -587,7 +602,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702565633}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -975,7 +990,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702565633}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1412,7 +1427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1619213287
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1430,7 +1445,7 @@ RectTransform:
   - {fileID: 1703076238}
   - {fileID: 220601079}
   m_Father: {fileID: 1702565633}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1535,10 +1550,10 @@ RectTransform:
   - {fileID: 379397756}
   - {fileID: 217465068}
   - {fileID: 1063966631}
-  - {fileID: 1619213287}
   - {fileID: 1250904617}
   - {fileID: 1880994864}
   - {fileID: 786141118}
+  - {fileID: 1619213287}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1796,7 +1811,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1702565633}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
